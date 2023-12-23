@@ -1,0 +1,21 @@
+
+
+<main class="container">
+    <div class="p-4 d-flex justify-content-center">
+        <h4>Lista de eventos</h4>
+    </div>
+    <table class="table">
+        <thead>
+            <th>Usuario</th>
+            <th>Descripcion</th>
+            <th>Fecha</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of datos">
+                <td>{{ item.user }}</td>
+                <td>{{ item.description }}</td>
+                <td>{{ item.registered }}</td>
+            </tr>
+        </tbody>
+    </table>
+</main>
