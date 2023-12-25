@@ -1,0 +1,41 @@
+.fondoHome{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    text-align: center; 
+    background: url('https://static.wixstatic.com/media/82fcd3_ed016384df3f43baa1d65cd00a0069cf~mv2.png/v1/fill/w_1279,h_948,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/82fcd3_ed016384df3f43baa1d65cd00a0069cf~mv2.png') no-repeat center center fixed;
+    /* background: url('../../assets/fondoBien.jpg') no-repeat center center fixed; */
+
+    background-size: cover; 
+    background-color: #071f4e;
+}
+.BotonListaEventos{
+    margin:20px;
+}
+button{
+    border-radius: 50px;
+    border:none;
+    background-color: rgb(0, 139, 198);
+    color:white;
+    padding:5px;
+    width: 8em;
+    transition: transform 0.3s ease-in-out;
+}
+button:hover {
+    transform: scale(1.1); 
+    background-color: rgba(236, 161, 12, 0.933) ;
+}
+
+img{
+   width:50px;
+   background-color: rgba(236, 161, 12, 0.933) ;
+   border-radius: 50px;
+   cursor: pointer;
+   margin-right: 10px;
+   transition: transform 0.3s ease-in-out;
+}
+img:hover {
+    transform: scale(1.1); 
+}

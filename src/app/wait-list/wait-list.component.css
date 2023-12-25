@@ -1,0 +1,35 @@
+
+.navbar-nav .nav-item.active {
+    font-size: 50px; 
+}
+header{
+    background-color: #071f4e;
+    height: 4em;
+}
+.navbar-nav .nav-link {
+    color: rgb(218, 218, 218) ;  
+    transition: color 0.3 ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(255,226,67) ;  
+}
+
+
+
+
+/* estilos de la tabla */ 
+
+body {
+    background: url('../../assets/patron1.png');
+    background-color: rgb(41, 41, 41); 
+    background-blend-mode: overlay; 
+    background-repeat: repeat;  
+    background-size: 50%; 
+    height: 100vh;
+}
+
+#titulo{
+    color:white;
+
+}

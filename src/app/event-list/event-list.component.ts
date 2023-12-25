@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { NgFor } from '@angular/common'; 
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-event-list',
@@ -19,7 +20,7 @@ import { NgFor } from '@angular/common';
 export class EventListComponent implements OnInit{
   datos: any;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private location: Location) {}
 
   getData(): Observable<any> {
     const url = 'http://localhost:3000/event/all';
@@ -35,5 +36,8 @@ export class EventListComponent implements OnInit{
           console.log("Error al traer los datos", error)
         }
       )
+  }
+  regresar(): void {
+    this.location.back();
   }
 }
